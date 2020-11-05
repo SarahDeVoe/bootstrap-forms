@@ -3,27 +3,108 @@
 <head>
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title> Big Cats CSS Exercise </title>
-	<link href="css/main.css" rel="stylesheet">
+	<title> The Twilight Saga Quiz </title>
+	<link href="css/bootstrap.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <h1> </h1>
+  <div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<form>
 
-  <p> </p>
+					<h1>The Twilight Saga Quiz</h1>
 
-  <div id="container">
+				  <div class="form-group">The Twilight Saga is a romance and fantasy book series and movie franchise. Filled with love, action, struggle, and humor, teens and adults alike have fallen in love with the story. Let's see how big of a fan YOU are. You can find more information about the Twilight Saga <a href="https://en.wikipedia.org/wiki/Twilight_(novel_series)#Twilight">here</a>.</div>
 
+
+						<div class="form-group">
+							<label for="maincharacter">Who is the main character? </label>
+							<input class="form-control" type="text" name="maincharacter" id="maincharacter" placeholder="Type her name here">
+						</div>
+
+						<div class="form-group">
+							<label for="loveinterest">Who does the main character fall in love with?</label>
+							<input class="form-control" type="text" name="loveinterest" id="loveinterest" placeholder="Type his name here">
+						</div>
+
+						<div class="form-group">
+							<label class="form-control-label" for="setting">Where does the story mainly take place?</label>
+							<select class="form-control" name="setting" id="setting">
+								<option>Choose</option>
+								<option value="LosAngeles">Los Angeles</option>
+								<option value="Jacksonville">Jacksonville</option>
+								<option value="NewYorkCity">New York City</option>
+								<option value="Forks">Forks</option>
+								<option value="Dallas">Dallas</option>
+								<option value="Phoenix">Phoenix</option>
+							</select>
+						</div>
+
+						<div class="form-group">
+							<label class="form-control-label" for="climaxscene">At the end of Twilight, what happeneds in Phoenix?</label>
+							<textarea class="form-control" name="climaxscene" id="climaxscene" rows="4"></textarea>
+						</div>
+
+						<div class="form-group">
+							<label>What animal does Jacob turn into?</label>
+
+							<div class="form-check">
+								<label class="form-check-label">
+									<input class="form-check-input" type="radio" name="whichanimal" value="Tiger">Tiger</label>
+							</div>
+
+							<div class="form-check">
+								<label class="form-check-label">
+									<input class="form-check-input" type="radio" name="whichanimal" value="Bear">Bear</label>
+							</div>
+
+							<div class="form-check">
+								<label class="form-check-label">
+									<input class="form-check-input" type="radio" name="whichanimal" value="Wolf">Wolf</label>
+							</div>
+
+							<div class="form-check">
+								<label class="form-check-label">
+									<input class="form-check-input" type="radio" name="whichanimal" value="Lion">Lion</label>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label>What other books did Stephenie Meyer write?</label>
+
+							<div class="form-check">
+								<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" name="books">Midnight Sun
+								</label>
+							</div>
+
+							<div class="form-check">
+								<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" name="books">Sunrise
+								</label>
+							</div>
+
+							<div class="form-check">
+								<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" name="books">Life and Death
+								</label>
+							</div>
+
+							<div class="form-check">
+								<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" name="books">The Short Second Life of Bree Tanner
+								</label>
+							</div>
+						</div>
+						<button class="btn btn-primary" type="submit">Submit</button>
+						<button class="btn btn-primary" type="reset">Reset</button>
+				</form>
+			</div>
+		</div>
   </div>
 
-
-
-
-
-  <footer>
-  	<p>This page is an assignment for the University of Florida course <b>Introduction to Web Apps</b>.</p>
-  </footer>
 
 </body>
 </html>
